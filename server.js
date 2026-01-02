@@ -60,13 +60,13 @@ app.post("/pay", async (req, res) => {
       external_reference: reference,
       customer_name: "Customer",
       callback_url: "https://loan-server-jlpt.onrender.com/callback",
-      channel_id: "000403"
+      channel_id: "000381"
     };
 
     const url = "https://swiftwallet.co.ke/pay-app-v2/payments.php";
     const resp = await axios.post(url, payload, {
       headers: {
-        Authorization: `Bearer sw_3cf4db5d921e2772c335ea640395110e310976c7323efb0f9276b846`,
+        Authorization: `Bearer sw_386a91fc2cbbadf9860f3188b0c45d2ee009c239c1895c6320ce4090`,
         "Content-Type": "application/json"
       }
     });
